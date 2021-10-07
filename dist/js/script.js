@@ -101,12 +101,12 @@
 
 
         /* find active product (product that has active class) */
-        const activeProduct = document.querySelector("select.menuProduct.clickable");
+        const activeProduct = document.querySelector(clickableTrigger);
 
 
         /* if there is active product and it's not thisProduct.element, remove class active from it */
-        if (activeProduct != thisProduct.element || activeProduct != null) {
-          activeProduct.classList.remove('active')
+        if (activeProduct != thisProduct.element && activeProduct != null) {
+          activeProduct.classList.remove(classNames.wrapperActive);
         }
 
 
