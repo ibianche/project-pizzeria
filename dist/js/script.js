@@ -91,7 +91,7 @@
     }
 
 
-    getElements(){
+    getElements() {
       const thisProduct = this;
 
       thisProduct.accordionTrigger = thisProduct.element.querySelector(select.menuProduct.clickable);
@@ -102,8 +102,7 @@
     }
 
 
-
-    initAccordion () {
+    initAccordion() {
       const thisProduct = this;
 
       /* find the clickable trigger (the element that should react to clicking) */
@@ -111,7 +110,7 @@
 
       /* START: add event listener to clickable trigger on event click */
       // clickableTrigger.addEventListener('click', function(event) {
-      thisProduct.accordionTrigger.addEventListener('click', function(event) {
+      thisProduct.accordionTrigger.addEventListener('click', function (event) {
 
 
         /* prevent default action for event */
@@ -135,36 +134,32 @@
       });
     }
 
-    initOrderForm (){
+    initOrderForm() {
       const thisProduct = this;
       console.log('test');
       console.log(this.initOrderForm);
 
-      thisProduct.form.addEventListener('submit', function(event){
+      thisProduct.form.addEventListener('submit', function (event) {
         event.preventDefault();
         thisProduct.processOrder();
       });
 
-      for(let input of thisProduct.formInputs){
-        input.addEventListener('change', function(){
+      for (let input of thisProduct.formInputs) {
+        input.addEventListener('change', function () {
           thisProduct.processOrder();
         });
       }
 
-      thisProduct.cartButton.addEventListener('click', function(event){
+      thisProduct.cartButton.addEventListener('click', function (event) {
         event.preventDefault();
         thisProduct.processOrder();
       });
-
-
-
 
 
     };
 
 
-
-    processOrder () {
+    processOrder() {
       const thisProduct = this;
       console.log('test2');
       console.log(this.processOrder);
@@ -198,29 +193,23 @@
             // check if the option is not default
             if (!option.default) {
 
-
               // add option price to price variable
-
+              price = price + option.price;
             }
 
           } else {
 
-
             // check if the option is default
-            // if () {
-
+            if (option.default) {
 
               // reduce price variable
-            // }
-
-
+              price = price - option.price;
+            }
           }
         }
 
         // update calculated price in the HTML
         thisProduct.priceElem.innerHTML = price;
-
-
       }
     }
 
