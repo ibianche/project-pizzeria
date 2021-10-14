@@ -99,6 +99,9 @@
       thisProduct.formInputs = thisProduct.form.querySelectorAll(select.all.formInputs);
       thisProduct.cartButton = thisProduct.element.querySelector(select.menuProduct.cartButton);
       thisProduct.priceElem = thisProduct.element.querySelector(select.menuProduct.priceElem);
+
+      thisProduct.imageWrapper = thisProduct.element.querySelector(select.menuProduct.imageWrapper);
+
     }
 
 
@@ -179,11 +182,16 @@
 
         console.log('szukam');
         console.log(param.options);
+
+
+
+
         // for every option in this category
         for (let optionId in param.options) {
           // determine option value, e.g. optionId = 'olives', option = { label: 'Olives', price: 2, default: true }
           const option = param.options[optionId];
           console.log(optionId, option);
+
 
 
           // check if there is param with a name of paramId in formData and if it includes optionId
@@ -195,6 +203,9 @@
 
               // add option price to price variable
               price = price + option.price;
+
+              // thisProduct.imageWrapper.classList.remove(classNames.menuProduct.imageVisible);
+
             }
 
           } else {
@@ -204,8 +215,27 @@
 
               // reduce price variable
               price = price - option.price;
+
+              // thisProduct.imageWrapper.classList.add(classNames.menuProduct.imageVisible);
             }
           }
+
+
+          const pizzaImage = thisProduct.imageWrapper.querySelector(paramId-optionId);
+          console.log('test 3');
+          console.log(pizzaImage);
+          if (pizzaImage){
+
+            thisProduct.imageWrapper.classList.add(classNames.menuProduct.imageVisible);
+
+          }else {
+
+            thisProduct.imageWrapper.classList.remove(classNames.menuProduct.imageVisible);
+
+          }
+
+
+
         }
 
         // update calculated price in the HTML
