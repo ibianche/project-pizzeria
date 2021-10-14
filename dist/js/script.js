@@ -184,14 +184,11 @@
         console.log(param.options);
 
 
-
-
         // for every option in this category
         for (let optionId in param.options) {
           // determine option value, e.g. optionId = 'olives', option = { label: 'Olives', price: 2, default: true }
           const option = param.options[optionId];
           console.log(optionId, option);
-
 
 
           // check if there is param with a name of paramId in formData and if it includes optionId
@@ -221,19 +218,20 @@
           }
 
 
-          const pizzaImage = thisProduct.imageWrapper.querySelector(paramId-optionId);
+          const pizzaImage = thisProduct.imageWrapper.querySelector("." + paramId + "-" + optionId);
           console.log('test 3');
           console.log(pizzaImage);
-          if (pizzaImage){
+          if (pizzaImage) {
+            if (formData[paramId] && formData[paramId].includes(optionId)) {
 
-            thisProduct.imageWrapper.classList.add(classNames.menuProduct.imageVisible);
+              pizzaImage.classList.add(classNames.menuProduct.imageVisible);
 
-          }else {
+            } else {
 
-            thisProduct.imageWrapper.classList.remove(classNames.menuProduct.imageVisible);
+              pizzaImage.classList.remove(classNames.menuProduct.imageVisible);
 
+            }
           }
-
 
 
         }
