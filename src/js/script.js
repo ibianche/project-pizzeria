@@ -192,7 +192,9 @@
 
 
           // check if there is param with a name of paramId in formData and if it includes optionId
-          if (formData[paramId] && formData[paramId].includes(optionId)) {
+          const optionSelected = formData[paramId] && formData[paramId].includes(optionId);
+
+          if (optionSelected) {
 
 
             // check if the option is not default
@@ -222,7 +224,7 @@
           console.log('test 3');
           console.log(pizzaImage);
           if (pizzaImage) {
-            if (formData[paramId] && formData[paramId].includes(optionId)) {
+            if (optionSelected) {
 
               pizzaImage.classList.add(classNames.menuProduct.imageVisible);
 
