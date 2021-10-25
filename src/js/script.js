@@ -261,8 +261,11 @@
     constructor(element){
       const thisWidget = this;
 
-      thisWidget.setValue(thisWidget.input.value);
       thisWidget.getElements(element);
+      thisWidget.setValue(thisWidget.input.value);
+      thisWidget.initActions();
+
+
 
       console.log('AmountWidget:', thisWidget);
       console.log('constructor arguments:', element);
@@ -298,6 +301,18 @@
 
     }
 
+
+    initActions(){
+
+      const thisWidget = this;
+
+      thisWidget.input.addEventListener('change', this.setValue(thisWidget.input.value));
+
+      thisWidget.linkDecrease.addEventListener('click', this.setValue(thisWidget.value --));
+
+      thisWidget.linkIncrease.addEventListener('click',  this.setValue(thisWidget.value ++));
+
+    }
 
 
   }
