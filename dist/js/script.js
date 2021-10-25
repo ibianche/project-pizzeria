@@ -66,9 +66,11 @@
       thisProduct.initAccordion();
 
       thisProduct.initOrderForm();
+
+      thisProduct.initAmountWidget();
       thisProduct.processOrder();
 
-      console.log('new Product:', thisProduct);
+      // console.log('new Product:', thisProduct);
     }
 
     renderInMenu() {
@@ -77,7 +79,7 @@
 
       /* generated HTML based on template*/
       const generatedHTML = templates.menuProduct(thisProduct.data);
-      console.log(generatedHTML);
+      // console.log(generatedHTML);
 
       /* create element using utils.createElementFromHTML */
       thisProduct.element = utils.createDOMFromHTML(generatedHTML);
@@ -101,6 +103,8 @@
       thisProduct.priceElem = thisProduct.element.querySelector(select.menuProduct.priceElem);
 
       thisProduct.imageWrapper = thisProduct.element.querySelector(select.menuProduct.imageWrapper);
+
+      thisProduct.amountWidgetElem = thisProduct.element.querySelector(select.menuProduct.amountWidget);
 
     }
 
@@ -139,8 +143,8 @@
 
     initOrderForm() {
       const thisProduct = this;
-      console.log('test');
-      console.log(this.initOrderForm);
+      // console.log('test');
+      // console.log(this.initOrderForm);
 
       thisProduct.form.addEventListener('submit', function (event) {
         event.preventDefault();
@@ -164,12 +168,12 @@
 
     processOrder() {
       const thisProduct = this;
-      console.log('test2');
-      console.log(this.processOrder);
+      // console.log('test2');
+      // console.log(this.processOrder);
 
       // covert form to object structure e.g. { sauce: ['tomato'], toppings: ['olives', 'redPeppers']}
       const formData = utils.serializeFormToObject(thisProduct.form);
-      console.log('formData', formData);
+      // console.log('formData', formData);
 
       // set price to default price
       let price = thisProduct.data.price;
@@ -178,17 +182,17 @@
       for (let paramId in thisProduct.data.params) {
         // determine param value, e.g. paramId = 'toppings', param = { label: 'Toppings', type: 'checkboxes'... }
         const param = thisProduct.data.params[paramId];
-        console.log(paramId, param);
-
-        console.log('szukam');
-        console.log(param.options);
+        // console.log(paramId, param);
+        //
+        // console.log('szukam');
+        // console.log(param.options);
 
 
         // for every option in this category
         for (let optionId in param.options) {
           // determine option value, e.g. optionId = 'olives', option = { label: 'Olives', price: 2, default: true }
           const option = param.options[optionId];
-          console.log(optionId, option);
+          // console.log(optionId, option);
 
 
           // check if there is param with a name of paramId in formData and if it includes optionId
@@ -221,8 +225,8 @@
 
 
           const pizzaImage = thisProduct.imageWrapper.querySelector("." + paramId + "-" + optionId);
-          console.log('test 3');
-          console.log(pizzaImage);
+          // console.log('test 3');
+          // console.log(pizzaImage);
           if (pizzaImage) {
             if (optionSelected) {
 
@@ -243,13 +247,68 @@
       }
     }
 
+    initAmountWidget(){
+      const thisProduct = this;
+
+      thisProduct.amountWidget = new AmountWidget(thisProduct.amountWidgetElem);
+
+    }
+
   }
+
+
+  class AmountWidget {
+    constructor(element){
+      const thisWidget = this;
+
+      thisWidget.setValue(thisWidget.input.value);
+      thisWidget.getElements(element);
+
+      console.log('AmountWidget:', thisWidget);
+      console.log('constructor arguments:', element);
+
+    }
+
+    getElements(element){
+      const thisWidget = this;
+
+      thisWidget.element = element;
+      thisWidget.input = thisWidget.element.querySelector(select.widgets.amount.input);
+      thisWidget.linkDecrease = thisWidget.element.querySelector(select.widgets.amount.linkDecrease);
+      thisWidget.linkIncrease = thisWidget.element.querySelector(select.widgets.amount.linkIncrease);
+    }
+
+
+    setValue(value){
+      const thisWidget = this;
+
+      const newValue = parseInt(value);
+
+
+       /*TO DO Add validation*/
+
+      if (thisWidget.value !== newValue  && !isNaN(newValue)){
+        thisWidget.value = newValue;
+      }
+
+
+      thisWidget.value = newValue;
+      thisWidget.input.value = thisWidget.value;
+
+
+    }
+
+
+
+  }
+
+
 
 
   const app = {
     initMenu: function () {
       const thisApp = this;
-      console.log('thisApp.data:', thisApp.data);
+      // console.log('thisApp.data:', thisApp.data);
       // const testProduct = new Product();
       // console.log('testProduct:', testProduct);
 
@@ -268,11 +327,11 @@
 
     init: function () {
       const thisApp = this;
-      console.log('*** App starting ***');
-      console.log('thisApp:', thisApp);
-      console.log('classNames:', classNames);
-      console.log('settings:', settings);
-      console.log('templates:', templates);
+      // console.log('*** App starting ***');
+      // console.log('thisApp:', thisApp);
+      // console.log('classNames:', classNames);
+      // console.log('settings:', settings);
+      // console.log('templates:', templates);
 
       thisApp.initData();
 
