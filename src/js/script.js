@@ -306,11 +306,11 @@
 
       const thisWidget = this;
 
-      thisWidget.input.addEventListener('change', this.setValue(thisWidget.input.value));
+      thisWidget.input.addEventListener('change', thisWidget.setValue(thisWidget.input.value));
 
-      thisWidget.linkDecrease.addEventListener('click', this.setValue(thisWidget.value --));
+      thisWidget.linkDecrease.addEventListener('click', event.preventDefault().thisWidget.setValue(thisWidget.value--));
 
-      thisWidget.linkIncrease.addEventListener('click',  this.setValue(thisWidget.value ++));
+      thisWidget.linkIncrease.addEventListener('click',  event.preventDefault().thisWidget.setValue(thisWidget.value++));
 
     }
 
