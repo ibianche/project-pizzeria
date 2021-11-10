@@ -290,7 +290,7 @@
 
        /*TO DO Add validation*/
 
-      if (thisWidget.value !== newValue  && !isNaN(newValue)){
+      if (thisWidget.value !== newValue  && !isNaN(newValue) && (newValue >= settings.amountWidget.defaultMin && newValue <= settings.amountWidget.defaultMax)){
         thisWidget.value = newValue;
       }
 
@@ -307,7 +307,7 @@
       const thisWidget = this;
 
       thisWidget.input.addEventListener('change', function (){
-        thisWidget.setValue(thisWidget.input.value)
+        thisWidget.setValue(thisWidget.input.value);
       });
 
       thisWidget.linkDecrease.addEventListener('click', function(event) {
