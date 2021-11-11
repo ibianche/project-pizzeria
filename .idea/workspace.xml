@@ -17,15 +17,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="292" column="137" selection-start-line="292" selection-start-column="137" selection-end-line="292" selection-end-column="137" />
+            <state relative-caret-position="-445">
+              <caret line="244" column="46" lean-forward="true" selection-start-line="244" selection-start-column="46" selection-end-line="244" selection-end-column="46" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#118#863#0" />
                 <element signature="e#887#979#0" />
                 <element signature="e#1001#1097#0" />
                 <element signature="e#1120#1227#0" />
-                <element signature="e#1233#7314#0" />
                 <element signature="e#8898#9692#0" />
               </folding>
             </state>
@@ -52,6 +51,7 @@
       <find>thisProduct.data.price</find>
       <find>thisProduct.data.params</find>
       <find>console.log</find>
+      <find>thisWidget.value</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -70,10 +70,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="810" />
+    <option name="height" value="804" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -156,12 +156,12 @@
       <workItem from="1634121440140" duration="13859000" />
       <workItem from="1634726929959" duration="6989000" />
       <workItem from="1636291999644" duration="40000" />
-      <workItem from="1636541963615" duration="5978000" />
+      <workItem from="1636541963615" duration="8783000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59146000" />
+    <option name="totallyTimeSpent" value="61951000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -173,7 +173,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="804" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="804" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27110156" />
@@ -294,15 +294,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="292" column="137" selection-start-line="292" selection-start-column="137" selection-end-line="292" selection-end-column="137" />
+        <state relative-caret-position="-445">
+          <caret line="244" column="46" lean-forward="true" selection-start-line="244" selection-start-column="46" selection-end-line="244" selection-end-column="46" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#118#863#0" />
             <element signature="e#887#979#0" />
             <element signature="e#1001#1097#0" />
             <element signature="e#1120#1227#0" />
-            <element signature="e#1233#7314#0" />
             <element signature="e#8898#9692#0" />
           </folding>
         </state>
