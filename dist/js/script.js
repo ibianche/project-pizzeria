@@ -382,6 +382,8 @@
 
       thisCart.getElements(element);
 
+      thisCart.initAction();
+
       console.log('new Cart', thisCart);
     }
 
@@ -393,8 +395,25 @@
 
       thisCart.dom.wrapper = element;
 
+      thisCart.dom.toggleTrigger = thisCart.dom.wrapper.querySelector(select.cart.toggleTrigger);
+
     }
 
+    initAction(){
+
+      const thisCart = this;
+
+      thisCart.dom.toggleTrigger.addEventListener('click', function() {
+
+        thisCart.dom.wrapper.classList.toggle(classNames.cart.wrapperActive);
+
+
+      });
+
+
+
+
+    }
 
 
 
@@ -423,7 +442,7 @@
     initCart: function () {
       const thisApp = this;
 
-      const cartElem = document.querySelector("select.containerOf.cart");
+      const cartElem = document.querySelector(select.containerOf.cart);
       thisApp.cart = new Cart(cartElem);
 
     },
