@@ -194,6 +194,7 @@
       thisProduct.cartButton.addEventListener('click', function (event) {
         event.preventDefault();
         thisProduct.processOrder();
+        thisProduct.addToCart();
       });
 
 
@@ -290,6 +291,30 @@
         thisProduct.processOrder()
 
       });
+
+    }
+
+
+    addToCart(){
+
+      const thisProduct = this;
+
+      app.cart.add(thisProduct);
+    }
+
+
+    prepareCartProduct(){
+
+      const thisProduct = this;
+
+      const productSummary = {};
+
+        productSummary.id = thisProduct.id;
+        productSummary.name = thisProduct.name;
+        productSummary.amount = thisProduct.amount;
+
+
+
 
     }
 
@@ -410,8 +435,13 @@
 
       });
 
+    }
 
+    add(menuProduct){
 
+      // const thisCart = this;
+
+      console.log('adding product', menuProduct);
 
     }
 
