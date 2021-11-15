@@ -276,9 +276,13 @@
         }
       }
 
+      thisProduct.priceSingle = price;
+
       price *= thisProduct.amountWidget.value;
 
       thisProduct.priceElem.innerHTML = price;
+
+
     }
 
     initAmountWidget() {
@@ -310,8 +314,10 @@
       const productSummary = {};
 
         productSummary.id = thisProduct.id;
-        productSummary.name = thisProduct.name;
-        productSummary.amount = thisProduct.amount;
+        productSummary.name = thisProduct.data.name;
+        productSummary.amount = thisProduct.amountWidget.value;
+        productSummary.priceSingle = thisProduct.priceSingle;
+        productSummary.price = productSummary.priceSingle * productSummary.amount;
 
 
 
