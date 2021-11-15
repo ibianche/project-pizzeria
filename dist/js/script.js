@@ -303,7 +303,7 @@
 
       const thisProduct = this;
 
-      app.cart.add(thisProduct);
+      app.cart.add(thisProduct.prepareCartProduct());
     }
 
 
@@ -311,7 +311,13 @@
 
       const thisProduct = this;
 
-      const productSummary = {};
+      const productSummary = {
+
+        params(){
+
+        }
+
+      };
 
         productSummary.id = thisProduct.id;
         productSummary.name = thisProduct.data.name;
@@ -321,7 +327,7 @@
 
 
 
-
+       return params;
     }
 
   }
