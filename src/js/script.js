@@ -343,7 +343,7 @@
           const option = param.options[optionId];
           const optionSelected = formData[paramId] && formData[paramId].includes(optionId);
 
-          if(optionSelected){
+          if (optionSelected) {
             params[paramId].options[optionId] = option.label;
           }
         }
@@ -455,6 +455,8 @@
 
       thisCart.dom.toggleTrigger = thisCart.dom.wrapper.querySelector(select.cart.toggleTrigger);
 
+      thisCart.dom.productList = thisCart.dom.wrapper.querySelector(select.cart.productList);
+
     }
 
     initAction() {
@@ -472,9 +474,19 @@
 
     add(menuProduct) {
 
-      // const thisCart = this;
+      const thisCart = this;
 
       console.log('adding product', menuProduct);
+
+      /* generated HTML based on template*/
+      const generatedHTML = templates.menuProduct(thisCart.menuProduct);
+      // console.log(generatedHTML);
+
+      /* create element using utils.createElementFromHTML */
+      thisCart.element = utils.createDOMFromHTML(generatedHTML);
+
+      /* add element to menu */
+      thisCart.dom.productList.appendChild(thisCart.element);
 
     }
 
