@@ -318,11 +318,12 @@
       productSummary.amount = thisProduct.amountWidget.value;
       productSummary.priceSingle = thisProduct.priceSingle;
       productSummary.price = productSummary.priceSingle * productSummary.amount;
+      productSummary.params = thisProduct.prepareCartProductParams();
 
 
-      productSummary.params = {};
+      // productSummary.params = {};
 
-      return productSummary.params;
+      return productSummary;
     }
 
     prepareCartProductParams() {
@@ -343,7 +344,7 @@
           const optionSelected = formData[paramId] && formData[paramId].includes(optionId);
 
           if(optionSelected){
-
+            params[paramId].options[optionId] = option.label;
           }
         }
       }
