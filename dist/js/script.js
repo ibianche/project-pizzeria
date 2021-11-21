@@ -488,11 +488,50 @@
       /* add element to menu */
       thisCart.dom.productList.appendChild(thisCart.element);
 
+      thisCart.products.push(menuProduct);
+      console.log('thisCart.products', thisCart.products);
+
     }
 
 
   }
 
+
+  class CartProduct {
+
+   constructor(menuProduct, element){
+
+     const thisCartProduct = this;
+
+     thisCartProduct.id = menuProduct.id;
+     thisCartProduct.name = menuProduct.data.name;
+     thisCartProduct.amount = menuProduct.amountWidget.value;
+     thisCartProduct.priceSingle = menuProduct.priceSingle;
+     thisCartProduct.price = productSummary.priceSingle * productSummary.amount;
+     thisCartProduct.params = menuProduct.prepareCartProductParams();
+
+     thisCartProduct.getElements(element);
+     console.log(thisCartProduct);
+
+
+   }
+
+
+   getElements(){
+     const thisCartProduct = this;
+
+     thisCartProduct.dom = {};
+     thisCartProduct.dom.wrapper = element;
+     thisCartProduct.dom.amountWidget = thisCartProduct.dom.wrapper.querySelector(select.cartProduct.amountWidget);
+     thisCartProduct.dom.price = thisCartProduct.dom.wrapper.querySelector(select.cartProduct.price);
+     thisCartProduct.dom.edit = thisCartProduct.dom.wrapper.querySelector(select.cartProduct.edit);
+     thisCartProduct.dom.remove = thisCartProduct.dom.wrapper.querySelector(select.cartProduct.remove);
+
+   }
+
+
+
+}
 
   const app = {
     initMenu: function () {
