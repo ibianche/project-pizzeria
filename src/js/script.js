@@ -517,7 +517,7 @@
    }
 
 
-   getElements(){
+   getElements(element){
      const thisCartProduct = this;
 
      thisCartProduct.dom = {};
