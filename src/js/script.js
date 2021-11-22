@@ -501,14 +501,16 @@
 
    constructor(menuProduct, element){
 
+     // console.log('test menuProduct', menuProduct);
+
      const thisCartProduct = this;
 
      thisCartProduct.id = menuProduct.id;
-     // thisCartProduct.name = menuProduct.data.name;
-     thisCartProduct.amount = menuProduct.amountWidget.value;
+     thisCartProduct.name = menuProduct.name;
+     thisCartProduct.amount = menuProduct.amount;
      thisCartProduct.priceSingle = menuProduct.priceSingle;
-     thisCartProduct.price = productSummary.priceSingle * productSummary.amount;
-     thisCartProduct.params = menuProduct.prepareCartProductParams();
+     thisCartProduct.price = menuProduct.price;
+     thisCartProduct.params = menuProduct.params;
 
      thisCartProduct.getElements(element);
      console.log(thisCartProduct);
