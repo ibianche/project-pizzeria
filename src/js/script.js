@@ -483,10 +483,10 @@
       // console.log(generatedHTML);
 
       /* create element using utils.createElementFromHTML */
-      thisCart.element = utils.createDOMFromHTML(generatedHTML);
+      const generatedDOM = utils.createDOMFromHTML(generatedHTML);
 
       /* add element to menu */
-      thisCart.dom.productList.appendChild(thisCart.element);
+      thisCart.dom.productList.appendChild(generatedDOM);
 
       thisCart.products.push(new CartProduct(menuProduct, generatedDOM));
       console.log('thisCart.products', thisCart.products);
@@ -504,7 +504,7 @@
      const thisCartProduct = this;
 
      thisCartProduct.id = menuProduct.id;
-     thisCartProduct.name = menuProduct.data.name;
+     // thisCartProduct.name = menuProduct.data.name;
      thisCartProduct.amount = menuProduct.amountWidget.value;
      thisCartProduct.priceSingle = menuProduct.priceSingle;
      thisCartProduct.price = productSummary.priceSingle * productSummary.amount;
