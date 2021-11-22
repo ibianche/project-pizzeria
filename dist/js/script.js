@@ -488,7 +488,7 @@
       /* add element to menu */
       thisCart.dom.productList.appendChild(thisCart.element);
 
-      thisCart.products.push(menuProduct);
+      thisCart.products.push(new CartProduct(menuProduct, generatedDOM));
       console.log('thisCart.products', thisCart.products);
 
     }
