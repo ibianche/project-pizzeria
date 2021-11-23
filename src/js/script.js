@@ -515,6 +515,8 @@
      thisCartProduct.getElements(element);
      console.log(thisCartProduct);
 
+     thisCartProduct.initAmountWidget();
+
 
    }
 
@@ -530,6 +532,20 @@
      thisCartProduct.dom.remove = thisCartProduct.dom.wrapper.querySelector(select.cartProduct.remove);
 
    }
+
+
+    initAmountWidget() {
+      const thisCartProduct = this;
+
+      thisCartProduct.amountWidget = new AmountWidget(thisCartProduct.amountWidgetElem);
+
+      thisCartProduct.amountWidgetElem.addEventListener('updated', function () {
+
+
+
+      });
+
+    }
 
 
 
