@@ -541,6 +541,10 @@
 
       thisCartProduct.amountWidgetElem.addEventListener('updated', function () {
 
+        thisCartProduct.amount =  thisCartProduct.dom.amountWidget;
+
+        // thisCartProduct.price = thisCartProduct.dom.price;
+
 
 
       });
