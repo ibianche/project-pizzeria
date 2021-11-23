@@ -537,24 +537,15 @@
     initAmountWidget() {
       const thisCartProduct = this;
 
-      thisCartProduct.amountWidget = new AmountWidget(thisCartProduct.amountWidgetElem);
+      thisCartProduct.amountWidget = new AmountWidget(thisCartProduct.dom.amountWidget);
 
-      thisCartProduct.amountWidgetElem.addEventListener('updated', function () {
+      thisCartProduct.dom.amountWidget.addEventListener('updated', function () {
 
         thisCartProduct.amount = thisCartProduct.amountWidget.value;
 
-        thisCartProduct.price *=  thisCartProduct.amountWidget;
+        thisCartProduct.price =  thisCartProduct.amount * thisCartProduct.priceSingle;
 
         thisCartProduct.dom.price.innerHTML = thisCartProduct.price;
-
-
-
-        // thisProduct.priceSingle = price;
-        //
-        // price *= thisProduct.amountWidget.value;
-        //
-        // thisProduct.priceElem.innerHTML = price;
-
 
 
 
