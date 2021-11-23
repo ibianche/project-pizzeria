@@ -541,9 +541,20 @@
 
       thisCartProduct.amountWidgetElem.addEventListener('updated', function () {
 
-        thisCartProduct.amount =  thisCartProduct.dom.amountWidget;
+        thisCartProduct.amount = thisCartProduct.amountWidget.value;
 
-        // thisCartProduct.price = thisCartProduct.dom.price;
+        thisCartProduct.price *=  thisCartProduct.amountWidget;
+
+        thisCartProduct.dom.price.innerHTML = thisCartProduct.price;
+
+
+
+        // thisProduct.priceSingle = price;
+        //
+        // price *= thisProduct.amountWidget.value;
+        //
+        // thisProduct.priceElem.innerHTML = price;
+
 
 
 
