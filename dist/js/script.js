@@ -363,8 +363,8 @@
       thisWidget.initActions();
 
 
-      console.log('AmountWidget:', thisWidget);
-      console.log('constructor arguments:', element);
+      // console.log('AmountWidget:', thisWidget);
+      // console.log('constructor arguments:', element);
 
     }
 
@@ -442,7 +442,7 @@
 
       thisCart.initAction();
 
-      console.log('new Cart', thisCart);
+      // console.log('new Cart', thisCart);
     }
 
     getElements(element) {
@@ -493,6 +493,28 @@
 
     }
 
+    update(){
+
+      const thisCart = this;
+
+      const deliveryFee = settings.cart.defaultDeliveryFee;
+
+      let totalNumber = 0;
+
+      let subtotalPrice = 0;
+
+      for (cartProduct of thisCart.products){
+
+        thisCart.totalNumber = totalNumber + amount;
+        thisCart.subtotalPrice = subtotalPrice + price;
+
+      } if (totalNumber && subtotalPrice = 0);
+
+      thisCart.totalPrice = subtotalPrice + deliveryFee;
+
+
+    }
+
 
   }
 
@@ -501,7 +523,7 @@
 
    constructor(menuProduct, element){
 
-     // console.log('test menuProduct', menuProduct);
+     console.log('test menuProduct', menuProduct);
 
      const thisCartProduct = this;
 
@@ -513,7 +535,7 @@
      thisCartProduct.params = menuProduct.params;
 
      thisCartProduct.getElements(element);
-     console.log(thisCartProduct);
+     // console.log(thisCartProduct);
 
      thisCartProduct.initAmountWidget();
 
