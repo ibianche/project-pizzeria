@@ -17,18 +17,25 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="512" column="56" selection-start-line="512" selection-start-column="56" selection-end-line="512" selection-end-column="56" />
+            <state relative-caret-position="151">
+              <caret line="509" column="18" lean-forward="true" selection-start-line="509" selection-start-column="7" selection-end-line="509" selection-end-column="18" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="e#118#1675#0" />
                 <element signature="e#1699#1887#0" />
                 <element signature="e#1909#2117#0" />
                 <element signature="e#2140#2395#0" />
                 <element signature="e#2401#10035#0" />
                 <element signature="e#10040#11864#0" />
-                <element signature="e#14352#15353#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dist/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1435">
+              <caret line="38" column="66" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -62,6 +69,8 @@
       <find>menuProduct</find>
       <find>amountWidget</find>
       <find>processOrder</find>
+      <find>Delivery:</find>
+      <find>totalNumber</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -170,12 +179,12 @@
       <workItem from="1634726929959" duration="6989000" />
       <workItem from="1636291999644" duration="40000" />
       <workItem from="1636541963615" duration="31412000" />
-      <workItem from="1637568857735" duration="11751000" />
+      <workItem from="1637568857735" duration="15040000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96331000" />
+    <option name="totallyTimeSpent" value="99620000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -190,7 +199,7 @@
     <frame x="0" y="23" width="1440" height="804" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.31039324" visible="true" weight="0.2746781" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.31039324" visible="true" weight="0.2746781" />
       <window_info id="Structure" order="1" sideWeight="0.6896067" side_tool="true" weight="0.2746781" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -273,13 +282,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="69" column="23" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/data.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-830">
@@ -299,6 +301,13 @@
     <entry file="file://$PROJECT_DIR$/src/sass/style.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1435">
+          <caret line="38" column="66" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
@@ -308,17 +317,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="512" column="56" selection-start-line="512" selection-start-column="56" selection-end-line="512" selection-end-column="56" />
+        <state relative-caret-position="151">
+          <caret line="509" column="18" lean-forward="true" selection-start-line="509" selection-start-column="7" selection-end-line="509" selection-end-column="18" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#118#1675#0" />
             <element signature="e#1699#1887#0" />
             <element signature="e#1909#2117#0" />
             <element signature="e#2140#2395#0" />
             <element signature="e#2401#10035#0" />
             <element signature="e#10040#11864#0" />
-            <element signature="e#14352#15353#0" />
           </folding>
         </state>
       </provider>

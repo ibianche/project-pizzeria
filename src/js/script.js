@@ -489,7 +489,9 @@
       thisCart.dom.productList.appendChild(generatedDOM);
 
       thisCart.products.push(new CartProduct(menuProduct, generatedDOM));
-      console.log('thisCart.products', thisCart.products);
+      // console.log('thisCart.products', thisCart.products);
+
+      thisCart.update();
 
     }
 
@@ -503,17 +505,16 @@
 
       let subtotalPrice = 0;
 
-      for (cartProduct of thisCart.products) {
+      for (let cartProduct of thisCart.products) {
 
         totalNumber = totalNumber + cartProduct.amount;
         subtotalPrice = subtotalPrice + cartProduct.price;
 
       }
-
       thisCart.totalPrice = subtotalPrice + deliveryFee;
 
       if (totalNumber !== 0){
-        return deliveryFee;
+       deliveryFee;
       }
 
 
