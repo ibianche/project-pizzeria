@@ -508,11 +508,12 @@
         totalNumber = totalNumber + cartProduct.amount;
         subtotalPrice = subtotalPrice + cartProduct.price;
 
-        // } if (totalNumber && subtotalPrice = 0);
-        //
-        // thisCart.totalPrice = subtotalPrice + deliveryFee;
+      }
 
+      thisCart.totalPrice = subtotalPrice + deliveryFee;
 
+      if (totalNumber !== 0){
+        return deliveryFee;
       }
 
 
