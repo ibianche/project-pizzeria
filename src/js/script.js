@@ -514,7 +514,7 @@
       thisCart.totalPrice = subtotalPrice + deliveryFee;
       console.log(thisCart.totalPrice);
       if (totalNumber !== 0){
-       thisCart.totalPrice;
+       thisCart.deliveryFee = subtotalPrice + deliveryFee;
       }
 
 
