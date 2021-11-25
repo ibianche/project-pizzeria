@@ -509,12 +509,14 @@
 
         totalNumber = totalNumber + cartProduct.amount;
         subtotalPrice = subtotalPrice + cartProduct.price;
-
       }
-      thisCart.totalPrice = subtotalPrice + deliveryFee;
-      console.log(thisCart.totalPrice);
+
       if (totalNumber !== 0){
-       thisCart.deliveryFee = subtotalPrice + deliveryFee;
+        thisCart.totalPrice = subtotalPrice + deliveryFee;
+        console.log(thisCart.totalPrice);
+      }else {
+        thisCart.totalPrice = subtotalPrice;
+        console.log(thisCart.totalPrice);
       }
 
 
