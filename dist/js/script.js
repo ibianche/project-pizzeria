@@ -527,6 +527,12 @@
         console.log(thisCart.totalPrice);
       }
 
+      thisCart.dom.subtotalPrice.innerHTML = subtotalPrice;
+      thisCart.dom.totalNumber.innerHTML = totalNumber;
+      thisCart.dom.deliveryFee.innerHTML = deliveryFee;
+      thisCart.dom.totalPrice.innerHTML = thisCart.totalPrice;
+
+
 
     }
   }
