@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cde6c56a-4275-4601-a0bd-0ab74d47dd2b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/script.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2720">
-              <caret line="533" lean-forward="true" selection-start-line="533" selection-end-line="533" />
+            <state relative-caret-position="442">
+              <caret line="483" column="26" selection-start-line="483" selection-start-column="26" selection-end-line="483" selection-end-column="26" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#1699#1887#0" />
@@ -183,12 +184,12 @@
       <workItem from="1634726929959" duration="6989000" />
       <workItem from="1636291999644" duration="40000" />
       <workItem from="1636541963615" duration="31412000" />
-      <workItem from="1637568857735" duration="22952000" />
+      <workItem from="1637568857735" duration="23728000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107532000" />
+    <option name="totallyTimeSpent" value="108308000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -321,8 +322,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2720">
-          <caret line="533" lean-forward="true" selection-start-line="533" selection-end-line="533" />
+        <state relative-caret-position="442">
+          <caret line="483" column="26" selection-start-line="483" selection-start-column="26" selection-end-line="483" selection-end-column="26" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#1699#1887#0" />
