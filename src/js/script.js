@@ -564,6 +564,8 @@
 
       thisCartProduct.initAmountWidget();
 
+      thisCartProduct.initActions();
+
 
     }
 
@@ -595,7 +597,6 @@
         thisCartProduct.dom.price.innerHTML = thisCartProduct.price;
 
       });
-
     }
 
 
@@ -611,7 +612,24 @@
 
       thisCartProduct.dom.wrapper.dispatchEvent(event);
 
+
     }
+
+    initActions(){
+
+      thisCartProduct.dom.edit.addEventListener('click', function (event) {
+        event.preventDefault();
+      });
+
+      thisCartProduct.dom.remove.addEventListener('click', function (event) {
+        event.preventDefault();
+        thisCartProduct.remove();
+      });
+
+
+
+    }
+
 
 
   }
