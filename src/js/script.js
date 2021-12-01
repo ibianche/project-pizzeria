@@ -463,7 +463,7 @@
 
       thisCart.dom.subtotalPrice = thisCart.dom.wrapper.querySelector(select.cart.subtotalPrice);
 
-      thisCart.dom.totalPrice = thisCart.dom.wrapper.querySelector(select.cart.totalPrice);
+      thisCart.dom.totalPrice = thisCart.dom.wrapper.querySelectorAll(select.cart.totalPrice);
 
       thisCart.dom.totalNumber = thisCart.dom.wrapper.querySelector(select.cart.totalNumber);
 
@@ -544,6 +544,10 @@
       thisCart.dom.totalNumber.innerHTML = totalNumber;
       thisCart.dom.deliveryFee.innerHTML = deliveryFee;
       thisCart.dom.totalPrice.innerHTML = thisCart.totalPrice;
+      for(let totalPrice of thisCart.dom.totalPrice){
+        thisCart.dom.totalPrice.innerHTML = thisCart.totalPrice;
+      };
+
 
     }
 
