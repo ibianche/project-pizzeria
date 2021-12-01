@@ -479,7 +479,7 @@
 
       });
 
-      thisCart.dom.productList.addEventListener('update', function () {
+      thisCart.dom.productList.addEventListener('updated', function () {
 
         thisCart.update();
 
