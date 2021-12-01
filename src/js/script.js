@@ -552,9 +552,9 @@
 
       thisCartProduct.dom.wrapper.remove(cartProduct);
 
-      const indexElement = thisCart.dom.wrapper.indexOf(thisCart.products);
+      let indexElement = thisCart.dom.wrapper.indexOf(thisCart.products);
 
-      const removeFromHTML = indexElement.splice;
+      let removeFromHTML = indexElement.splice;
 
 
     }
