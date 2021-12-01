@@ -550,11 +550,13 @@
     remove(cartProduct) {
     const thisCart = cart;
 
-      thisCartProduct.dom.wrapper.remove(cartProduct);
+      thisCart.dom.wrapper.remove(cartProduct);
 
       let indexElement = thisCart.dom.wrapper.indexOf(thisCart.products);
 
-      let removeFromHTML = indexElement.splice;
+      let removeFromHTML = indexElement.splice(indexElement);
+
+      thisCart.update();
 
 
     }
