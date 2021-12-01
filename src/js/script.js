@@ -77,6 +77,14 @@
       defaultDeliveryFee: 20,
     },
     // CODE ADDED END
+
+    db: {
+      url: '//localhost:3131',
+      products: 'products',
+      orders: 'orders',
+    },
+
+
   };
 
   const templates = {
@@ -673,8 +681,9 @@
     initData: function () {
       const thisApp = this;
 
-      thisApp.data = dataSource;
-
+      // thisApp.data = dataSource;
+      thisApp.data = {};
+      const url = settings.db.url + '/' + settings.db.products;
     },
 
     initCart: function () {
