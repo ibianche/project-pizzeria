@@ -558,7 +558,7 @@
 
       let indexElement = thisCart.products.indexOf(cartProduct);
 
-      thisCart.products.splice(indexElement);
+      thisCart.products.splice(indexElement, 1);
 
       thisCart.update();
 
