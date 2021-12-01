@@ -545,7 +545,7 @@
       thisCart.dom.deliveryFee.innerHTML = deliveryFee;
       thisCart.dom.totalPrice.innerHTML = thisCart.totalPrice;
       for(let totalPrice of thisCart.dom.totalPrice){
-        thisCart.dom.totalPrice.innerHTML = thisCart.totalPrice;
+        totalPrice.innerHTML = thisCart.totalPrice;
       };
 
 
