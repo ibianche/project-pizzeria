@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cde6c56a-4275-4601-a0bd-0ab74d47dd2b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/db/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/db/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/script.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,46 +13,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="710" selection-start-line="710" selection-end-line="710" />
+            <state relative-caret-position="482">
+              <caret line="509" lean-forward="true" selection-start-line="509" selection-end-line="509" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <element signature="e#118#1675#0" />
                 <element signature="e#1699#1887#0" />
+                <element signature="e#1909#2117#0" />
                 <element signature="e#2140#2395#0" />
                 <element signature="e#2401#10035#0" />
                 <element signature="e#10040#11864#0" />
                 <element signature="e#13921#15572#0" />
+                <element signature="e#17642#19142#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="169" column="2" selection-start-line="169" selection-start-column="2" selection-end-line="169" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/db/app.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="209" lean-forward="true" selection-start-line="209" selection-end-line="209" />
             </state>
           </provider>
         </entry>
@@ -112,10 +87,10 @@
         <option value="$PROJECT_DIR$/dist/index.html" />
         <option value="$PROJECT_DIR$/src/db/app.json.js" />
         <option value="$PROJECT_DIR$/src/js/data.js" />
-        <option value="$PROJECT_DIR$/src/js/script.js" />
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/db/app.json" />
+        <option value="$PROJECT_DIR$/src/js/script.js" />
       </list>
     </option>
   </component>
@@ -210,12 +185,12 @@
       <workItem from="1634726929959" duration="6989000" />
       <workItem from="1636291999644" duration="40000" />
       <workItem from="1636541963615" duration="31412000" />
-      <workItem from="1637568857735" duration="38356000" />
+      <workItem from="1637568857735" duration="39088000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122936000" />
+    <option name="totallyTimeSpent" value="123668000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -228,6 +203,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="804" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.31039324" visible="true" weight="0.2746781" />
       <window_info id="Structure" order="1" sideWeight="0.6896067" side_tool="true" weight="0.2746781" />
@@ -244,7 +220,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3286517" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.5294944" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.5294944" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -341,28 +317,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="710" selection-start-line="710" selection-end-line="710" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#1699#1887#0" />
-            <element signature="e#2140#2395#0" />
-            <element signature="e#2401#10035#0" />
-            <element signature="e#10040#11864#0" />
-            <element signature="e#13921#15572#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="169" column="2" selection-start-line="169" selection-start-column="2" selection-end-line="169" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -372,8 +326,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/db/app.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="209" lean-forward="true" selection-start-line="209" selection-end-line="209" />
+        <state relative-caret-position="575">
+          <caret line="209" selection-start-line="209" selection-end-line="209" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="169" column="2" selection-start-line="169" selection-start-column="2" selection-end-line="169" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="509" lean-forward="true" selection-start-line="509" selection-end-line="509" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#118#1675#0" />
+            <element signature="e#1699#1887#0" />
+            <element signature="e#1909#2117#0" />
+            <element signature="e#2140#2395#0" />
+            <element signature="e#2401#10035#0" />
+            <element signature="e#10040#11864#0" />
+            <element signature="e#13921#15572#0" />
+            <element signature="e#17642#19142#0" />
+          </folding>
         </state>
       </provider>
     </entry>
