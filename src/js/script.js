@@ -582,6 +582,12 @@
 
     }
 
+    sendOrder(){
+      const thisCart = this;
+
+
+    }
+
 
   }
 
