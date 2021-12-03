@@ -477,6 +477,10 @@
 
       thisCart.dom.form = thisCart.dom.wrapper.querySelector(select.cart.form);
 
+      thisCart.dom.address = thisCart.dom.wrapper.querySelector(select.cart.address);
+
+      thisCart.dom.phone = thisCart.dom.wrapper.querySelector(select.cart.phone);
+
     }
 
     initAction() {
@@ -584,6 +588,21 @@
 
     sendOrder(){
       const thisCart = this;
+
+      const url = settings.db.url + '/' + settings.db.orders;
+
+      const payload = {
+        address:
+        phone:
+        totalPrice:
+        subtotalPrice:
+        totalNumber:
+        deliveryFee:
+        products:
+
+      };
+      console.log(payload);
+
 
 
     }
