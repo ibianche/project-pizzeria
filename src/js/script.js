@@ -592,16 +592,16 @@
       const url = settings.db.url + '/' + settings.db.orders;
 
       const payload = {
-        address:
-        phone:
-        totalPrice:
+        address: thisCart.dom.address;
+        phone: thisCart.dom.phone;
+        totalPrice: thisCart.totalPrice;
         subtotalPrice:
         totalNumber:
         deliveryFee:
         products:
 
       };
-      console.log(payload);
+      console.log('payload:', payload);
 
 
 
