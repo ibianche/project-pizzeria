@@ -565,9 +565,10 @@
       thisCart.dom.totalNumber.innerHTML = totalNumber;
       thisCart.dom.deliveryFee.innerHTML = deliveryFee;
       thisCart.dom.totalPrice.innerHTML = thisCart.totalPrice;
-      for(let totalPrice of thisCart.dom.totalPrice){
+      for (let totalPrice of thisCart.dom.totalPrice) {
         totalPrice.innerHTML = thisCart.totalPrice;
-      };
+      }
+      ;
 
 
     }
@@ -586,7 +587,7 @@
 
     }
 
-    sendOrder(){
+    sendOrder() {
       const thisCart = this;
 
       const url = settings.db.url + '/' + settings.db.orders;
@@ -602,8 +603,20 @@
       };
       console.log('test', payload);
 
+      for (let prod of thisCart.products) {
+        payload.products.push(prod.getData());
+      }
+      ;
 
+      const options = {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      };
 
+      fetch(url, options);
     }
 
 
@@ -693,7 +706,7 @@
       });
     }
 
-    getData(){
+    getData() {
       const thisCartProduct = this;
       const products = {};
 
@@ -730,13 +743,13 @@
       const url = settings.db.url + '/' + settings.db.products;
 
       fetch(url)
-        .then(function(rawResponse){
+        .then(function (rawResponse) {
           return rawResponse.json();
         })
-        .then(function(parsedResponse){
+        .then(function (parsedResponse) {
           console.log('parsedResponse', parsedResponse);
 
-        //  save parsedResponse as thisApp.data.products
+          //  save parsedResponse as thisApp.data.products
           thisApp.data.products = parsedResponse;
 
           //  execute initMenu method
