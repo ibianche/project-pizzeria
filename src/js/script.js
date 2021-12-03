@@ -676,9 +676,8 @@
       });
 
       thisCartProduct.dom.wrapper.dispatchEvent(event);
-
-
     }
+
 
     initActions() {
       const thisCartProduct = this;
@@ -692,9 +691,20 @@
         thisCartProduct.remove();
         console.log(thisCartProduct.dom.remove);
       });
-
-
     }
+
+    getData(){
+      const thisCartProduct = this;
+      const products = {};
+
+      products.id = thisCartProduct.id;
+      products.name = thisCartProduct.name;
+      products.amount = thisCartProduct.amountWidget.value;
+      products.priceSingle = thisCartProduct.priceSingle;
+      products.price = products.priceSingle * products.amount;
+      products.params = thisCartProduct.params;
+
+    };
 
 
   }
