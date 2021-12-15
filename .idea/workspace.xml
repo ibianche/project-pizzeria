@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cde6c56a-4275-4601-a0bd-0ab74d47dd2b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/db/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/settings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/utils.js" afterDir="false" />
-    </list>
+    <list default="true" id="cde6c56a-4275-4601-a0bd-0ab74d47dd2b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +40,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/utils.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="635">
@@ -53,6 +48,15 @@
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sass/partials/_settings.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -200,6 +204,7 @@
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/js/settings.js" />
         <option value="$PROJECT_DIR$/src/js/utils.js" />
+        <option value="$PROJECT_DIR$/src/sass/partials/_settings.scss" />
       </list>
     </option>
   </component>
@@ -237,6 +242,19 @@
               <item name="project-pizzeria" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-pizzeria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-pizzeria" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sass" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-pizzeria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-pizzeria" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sass" type="462c0819:PsiDirectoryNode" />
+              <item name="partials" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -297,12 +315,12 @@
       <workItem from="1637568857735" duration="45011000" />
       <workItem from="1638982128408" duration="8019000" />
       <workItem from="1639231057338" duration="5728000" />
-      <workItem from="1639580610455" duration="1631000" />
+      <workItem from="1639580610455" duration="1897000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144969000" />
+    <option name="totallyTimeSpent" value="145235000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -317,7 +335,7 @@
     <frame x="0" y="23" width="1440" height="804" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.31039324" visible="true" weight="0.28540772" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.31039324" visible="true" weight="0.28540772" />
       <window_info id="Structure" order="1" sideWeight="0.6896067" side_tool="true" weight="0.2746781" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -519,6 +537,13 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/partials/_settings.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
         </state>
       </provider>
     </entry>
