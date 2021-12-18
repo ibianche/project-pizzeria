@@ -1,4 +1,4 @@
-import {utils} from "../utils";
+// import {utils} from "../utils.js";
 import {select, classNames, templates} from '../settings.js';
 import AmountWidget from './AmountWidget.js';
 
@@ -6,7 +6,7 @@ class Booking {
   constructor(element) {
     const thisBooking = this;
 
-    thisBooking.render();
+    thisBooking.render(element);
     thisBooking.initWidgets();
   }
 
@@ -19,7 +19,7 @@ class Booking {
     thisBooking.dom = {};
 
     //dodaję do pustego obiektu własciwość wrapper i przupisuję referencję do kontenera
-    thisBooking.dom.wrapper(element);
+    thisBooking.dom.wrapper = element;
 
     //zmiana wartości wrappera innerHTML na kod wygenerowany z szablonu
     thisBooking.dom.wrapper.innerHTML = generatedHTML;
