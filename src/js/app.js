@@ -4,13 +4,15 @@ import Product from './components/Product.js';
 import Cart from './components/Cart.js';
 import CartProduct from './components/CartProduct.js';
 import AmountWidget from './components/AmountWidget.js';
+import Booking from './components/Booking.js';
+
 
 const app = {
     initPages: function(){
       const thisApp = this;
 
       thisApp.pages = document.querySelector(select.containerOf.pages).children;
-      thisApp.navLinks = document.querySelectorAll(select.nav.links);
+      thisApp.navLinks = document.querySelectorAll(select.widgets.nav.links);
 
       const idFromHash = window.location.hash.replace('/#', '');
 
@@ -112,6 +114,15 @@ const app = {
       });
       },
 
+    initBooking: function () {
+      const thisApp = this;
+
+      const widgetOfReservation = document.querySelector(select.containerOf.booking);
+
+      thisApp.Booking = new Booking(widgetOfReservation);
+
+    },
+
 
     init: function () {
       const thisApp = this;
@@ -128,6 +139,8 @@ const app = {
       // thisApp.initMenu();
 
       thisApp.initCart();
+
+      thisApp.initBooking();
     },
 
   };
