@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cde6c56a-4275-4601-a0bd-0ab74d47dd2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/js/components/Booking.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/components/Booking.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/components/Booking.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/components/Booking.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/Booking.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="121" column="53" selection-start-line="121" selection-start-column="53" selection-end-line="121" selection-end-column="53" />
+            <state relative-caret-position="289">
+              <caret line="128" column="45" lean-forward="true" selection-start-line="128" selection-start-column="45" selection-end-line="128" selection-end-column="45" />
               <folding>
                 <element signature="e#1#61#0" expanded="true" />
                 <element signature="e#289#1258#0" />
@@ -33,34 +31,38 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/components/Booking.js">
+        <entry file="file://$PROJECT_DIR$/src/js/settings.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+            <state relative-caret-position="434">
+              <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/components/AmountWidget.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/js/components/Booking.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="26" selection-start-column="26" selection-end-column="26" />
+            <state relative-caret-position="512">
+              <caret line="45" column="4" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
               <folding>
-                <element signature="e#325#369#0" />
-                <element signature="n#!!block;n#setValue#0;n#AmountWidget#0" />
-                <element signature="n#!!block;n#initActions#0;n#AmountWidget#0" />
-                <element signature="n#!!block;n#announce#0;n#AmountWidget#0" />
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/settings.js">
+        <entry file="file://$PROJECT_DIR$/src/js/components/CartProduct.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
+            <state relative-caret-position="3">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+                <element signature="n#!!block;n#constructor#0;n#CartProduct#0" />
+                <element signature="n#!!block;n#remove#0;n#CartProduct#0" />
+                <element signature="n#!!block;n#initActions#0;n#CartProduct#0" />
+                <element signature="n#!!block;n#getData#0;n#CartProduct#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,8 +134,8 @@
         <option value="$PROJECT_DIR$/src/sass/partials/_settings.scss" />
         <option value="$PROJECT_DIR$/src/js/components/AmountWidget.js" />
         <option value="$PROJECT_DIR$/src/js/settings.js" />
-        <option value="$PROJECT_DIR$/src/js/components/Booking.js" />
         <option value="$PROJECT_DIR$/src/js/app.js" />
+        <option value="$PROJECT_DIR$/src/js/components/Booking.js" />
       </list>
     </option>
   </component>
@@ -258,12 +260,12 @@
       <workItem from="1638982128408" duration="8019000" />
       <workItem from="1639231057338" duration="5728000" />
       <workItem from="1639580610455" duration="6382000" />
-      <workItem from="1639668237370" duration="2512000" />
+      <workItem from="1639668237370" duration="4309000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152232000" />
+    <option name="totallyTimeSpent" value="154029000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -342,6 +344,12 @@
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/js/components/CartProduct.js</url>
+          <line>45</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -382,40 +390,6 @@
     <entry file="file://$PROJECT_DIR$/.eslintrc.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/components/Cart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="45" column="3" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
-          <folding>
-            <element signature="n#!!block;n#constructor#0;n#Cart#0" />
-            <element signature="n#!!block;n#getElements#0;n#Cart#0" />
-            <element signature="n#!!block;n#initAction#0;n#Cart#0" />
-            <element signature="n#!!block;n#add#0;n#Cart#0" />
-            <element signature="n#!!block;n#update#0;n#Cart#0" />
-            <element signature="n#!!block;n#remove#0;n#Cart#0" />
-            <element signature="n#!!block;n#sendOrder#0;n#Cart#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/components/Product.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="218" selection-start-line="218" selection-end-line="218" />
-          <folding>
-            <element signature="n#!!block;n#renderInMenu#0;n#Product#0" />
-            <element signature="n#!!block;n#getElements#0;n#Product#0" />
-            <element signature="n#!!block;n#initAccordion#0;n#Product#0" />
-            <element signature="n#!!block;n#initOrderForm#0;n#Product#0" />
-            <element signature="n#!!block;n#processOrder#0;n#Product#0" />
-            <element signature="n#!!block;n#initAmountWidget#0;n#Product#0" />
-            <element signature="n#!!block;n#addToCart#0;n#Product#0" />
-            <element signature="n#!!block;n#prepareCartProduct#0;n#Product#0" />
-            <element signature="n#!!block;n#prepareCartProductParams#0;n#Product#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.stylelintrc.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -435,16 +409,6 @@
         <state relative-caret-position="-391" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="78" column="2" selection-start-line="78" selection-start-column="2" selection-end-line="78" selection-end-column="2" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/db/app.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1358">
@@ -459,14 +423,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/components/CartProduct.js">
+    <entry file="file://$PROJECT_DIR$/src/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-520">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        <state relative-caret-position="289">
+          <caret line="128" column="45" lean-forward="true" selection-start-line="128" selection-start-column="45" selection-end-line="128" selection-end-column="45" />
           <folding>
-            <element signature="e#0#38#0" expanded="true" />
-            <element signature="n#!!block;n#initAmountWidget#0;n#CartProduct#0" />
-            <element signature="n#!!block;n#remove#0;n#CartProduct#0" />
+            <element signature="e#1#61#0" expanded="true" />
+            <element signature="e#289#1258#0" />
+            <element signature="e#1295#1720#0" />
+            <element signature="e#1749#2165#0" />
+            <element signature="e#2194#2819#0" />
+            <element signature="e#2848#3209#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/Cart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="45" column="3" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!block;n#constructor#0;n#Cart#0" />
+            <element signature="n#!!block;n#getElements#0;n#Cart#0" />
+            <element signature="n#!!block;n#initAction#0;n#Cart#0" />
+            <element signature="n#!!block;n#add#0;n#Cart#0" />
+            <element signature="n#!!block;n#update#0;n#Cart#0" />
+            <element signature="n#!!block;n#remove#0;n#Cart#0" />
+            <element signature="n#!!block;n#sendOrder#0;n#Cart#0" />
           </folding>
         </state>
       </provider>
@@ -476,7 +459,9 @@
         <state>
           <caret column="26" selection-start-column="26" selection-end-column="26" />
           <folding>
+            <element signature="n#!!block;n#constructor#0;n#AmountWidget#0" />
             <element signature="e#325#369#0" />
+            <element signature="n#!!block;n#getElements#0;n#AmountWidget#0" />
             <element signature="n#!!block;n#setValue#0;n#AmountWidget#0" />
             <element signature="n#!!block;n#initActions#0;n#AmountWidget#0" />
             <element signature="n#!!block;n#announce#0;n#AmountWidget#0" />
@@ -484,31 +469,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="78" column="2" selection-start-line="78" selection-start-column="2" selection-end-line="78" selection-end-column="2" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/settings.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
+        <state relative-caret-position="434">
           <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/Product.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="45" />
+          <folding>
+            <element signature="n#!!block;n#getElements#0;n#Product#0" />
+            <element signature="n#!!block;n#initAccordion#0;n#Product#0" />
+            <element signature="n#!!block;n#initOrderForm#0;n#Product#0" />
+            <element signature="n#!!block;n#processOrder#0;n#Product#0" />
+            <element signature="n#!!block;n#initAmountWidget#0;n#Product#0" />
+            <element signature="n#!!block;n#addToCart#0;n#Product#0" />
+            <element signature="n#!!block;n#prepareCartProduct#0;n#Product#0" />
+            <element signature="n#!!block;n#prepareCartProductParams#0;n#Product#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/CartProduct.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#CartProduct#0" />
+            <element signature="n#!!block;n#remove#0;n#CartProduct#0" />
+            <element signature="n#!!block;n#initActions#0;n#CartProduct#0" />
+            <element signature="n#!!block;n#getData#0;n#CartProduct#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/components/Booking.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="121" column="53" selection-start-line="121" selection-start-column="53" selection-end-line="121" selection-end-column="53" />
+        <state relative-caret-position="512">
+          <caret line="45" column="4" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
           <folding>
-            <element signature="e#1#61#0" expanded="true" />
-            <element signature="e#289#1258#0" />
-            <element signature="e#1295#1720#0" />
-            <element signature="e#1749#2165#0" />
-            <element signature="e#2194#2819#0" />
-            <element signature="e#2848#3209#0" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
