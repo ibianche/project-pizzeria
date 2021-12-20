@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cde6c56a-4275-4601-a0bd-0ab74d47dd2b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/dist/js/components/Booking.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/components/Booking.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/components/Booking.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/Booking.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/components/BaseWidget.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/components/AmountWidget.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/components/AmountWidget.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/components/AmountWidget.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/AmountWidget.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,47 +15,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="119" column="30" lean-forward="true" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="30" />
-              <folding>
-                <element signature="e#1#61#0" expanded="true" />
-                <element signature="e#289#1258#0" />
-                <element signature="e#1295#1720#0" />
-                <element signature="e#1749#2165#0" />
-                <element signature="e#2194#2819#0" />
-                <element signature="e#2848#3209#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/js/components/Booking.js">
+        <entry file="file://$PROJECT_DIR$/src/js/components/BaseWidget.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="32" column="17" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
-              <folding>
-                <element signature="e#38#99#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="540">
+              <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/components/CartProduct.js">
+        <entry file="file://$PROJECT_DIR$/src/js/components/AmountWidget.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-                <element signature="n#!!block;n#constructor#0;n#CartProduct#0" />
-                <element signature="n#!!block;n#remove#0;n#CartProduct#0" />
-                <element signature="n#!!block;n#initActions#0;n#CartProduct#0" />
-                <element signature="n#!!block;n#getData#0;n#CartProduct#0" />
-              </folding>
+            <state relative-caret-position="312">
+              <caret line="54" column="52" selection-start-line="54" selection-start-column="52" selection-end-line="54" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -69,11 +44,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Event</find>
       <find>thisProduct.data.price</find>
       <find>thisProduct.data.params</find>
       <find>console.log</find>
-      <find>thisWidget.value</find>
       <find>value=</find>
       <find>app.cart</find>
       <find>initOr</find>
@@ -99,7 +72,13 @@
       <find>includes</find>
       <find>#</find>
       <find>scss/</find>
+      <find>thisWidget.linkIncrease</find>
+      <find>thisWidget.value</find>
     </findStrings>
+    <replaceStrings>
+      <replace>thisWidget.dom.linkIncrease</replace>
+      <replace>thisWidget.correctValue</replace>
+    </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
     </dirStrings>
@@ -123,10 +102,11 @@
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/js/utils.js" />
         <option value="$PROJECT_DIR$/src/sass/partials/_settings.scss" />
-        <option value="$PROJECT_DIR$/src/js/components/AmountWidget.js" />
         <option value="$PROJECT_DIR$/src/js/settings.js" />
         <option value="$PROJECT_DIR$/src/js/app.js" />
         <option value="$PROJECT_DIR$/src/js/components/Booking.js" />
+        <option value="$PROJECT_DIR$/src/js/components/AmountWidget.js" />
+        <option value="$PROJECT_DIR$/src/js/components/BaseWidget.js" />
       </list>
     </option>
   </component>
@@ -251,12 +231,12 @@
       <workItem from="1638982128408" duration="8019000" />
       <workItem from="1639231057338" duration="5728000" />
       <workItem from="1639580610455" duration="6382000" />
-      <workItem from="1639668237370" duration="5249000" />
+      <workItem from="1639668237370" duration="8657000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154969000" />
+    <option name="totallyTimeSpent" value="158377000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -271,7 +251,7 @@
     <frame x="0" y="23" width="1440" height="811" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.31039324" visible="true" weight="0.28898427" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.31039324" visible="true" weight="0.28898427" />
       <window_info id="Structure" order="1" sideWeight="0.6896067" side_tool="true" weight="0.2746781" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -318,11 +298,6 @@
           <url>file://$PROJECT_DIR$/src/js/components/Product.js</url>
           <line>26</line>
           <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/js/components/AmountWidget.js</url>
-          <line>49</line>
-          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/js/components/Product.js</url>
@@ -430,21 +405,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/components/AmountWidget.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
-          <folding>
-            <element signature="n#!!block;n#constructor#0;n#AmountWidget#0" />
-            <element signature="e#325#369#0" />
-            <element signature="n#!!block;n#getElements#0;n#AmountWidget#0" />
-            <element signature="n#!!block;n#setValue#0;n#AmountWidget#0" />
-            <element signature="n#!!block;n#initActions#0;n#AmountWidget#0" />
-            <element signature="n#!!block;n#announce#0;n#AmountWidget#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/utils.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
@@ -475,7 +435,7 @@
     <entry file="file://$PROJECT_DIR$/src/js/components/CartProduct.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
             <element signature="n#!!block;n#constructor#0;n#CartProduct#0" />
@@ -493,10 +453,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/Booking.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+          <folding>
+            <element signature="e#38#99#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
-          <caret line="119" column="30" lean-forward="true" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="30" />
+          <caret line="119" column="30" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="30" />
           <folding>
             <element signature="e#1#61#0" expanded="true" />
             <element signature="e#289#1258#0" />
@@ -508,13 +478,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/components/Booking.js">
+    <entry file="file://$PROJECT_DIR$/src/js/components/AmountWidget.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="32" column="17" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
-          <folding>
-            <element signature="e#38#99#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="312">
+          <caret line="54" column="52" selection-start-line="54" selection-start-column="52" selection-end-line="54" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/BaseWidget.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
         </state>
       </provider>
     </entry>
