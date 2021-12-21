@@ -25,7 +25,7 @@ const app = {
       }
 
 
-      thisApp.activatePage(idFromHash);
+      thisApp.activatePage(pageMatchingHash);
 
       for(let link of thisApp.navLinks){
         link.addEventListener('click', function (event) {
@@ -96,7 +96,7 @@ const app = {
 
         });
 
-      console.log('thisApp.data', JSON.stringify(thisApp.data));
+      // console.log('thisApp.data', JSON.stringify(thisApp.data));
 
 
     },

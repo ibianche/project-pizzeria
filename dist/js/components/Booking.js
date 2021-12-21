@@ -20,7 +20,7 @@ class Booking {
     const endDateParam = settings.db.dateEndParamKey + '=' + utils.dateToStr(thisBooking.datePicker.maxDate);
 
     const params = {
-      booking: [
+      bookings: [
         startDateParam,
         endDateParam,
       ],
@@ -40,14 +40,14 @@ class Booking {
     // console.log('getData params', params);
 
     const urls = {
-      booking: settings.db.url + '/' + settings.db.booking + '?' + params.booking.join('&'),
-      eventsCurrent: settings.db.url + '/' + settings.db.event + '?' + params.eventsCurrent.join('&'),
-      eventsRepeat: settings.db.url + '/' + settings.db.event + '?' + params.eventsRepeat.join('&'),
+      booking: settings.db.url + '/' + settings.db.bookings + '?' + params.bookings.join('&'),
+      eventsCurrent: settings.db.url + '/' + settings.db.events + '?' + params.eventsCurrent.join('&'),
+      eventsRepeat: settings.db.url + '/' + settings.db.events + '?' + params.eventsRepeat.join('&'),
     };
 
 
     Promise.all([
-      fetch(urls.booking), /*funkcja do połączenia się z serwerem*/
+      fetch(urls.bookings), /*funkcja do połączenia się z serwerem*/
       fetch(urls.eventsCurrent),
       fetch(urls.eventsRepeat),
     ])
@@ -116,7 +116,7 @@ class Booking {
 
 
       if (typeof thisBooking.booked[date][hourBlock] == 'undefined') {
-        thisBooking.booked[date][hourBlock] = {};
+        thisBooking.booked[date][hourBlock] = [];
       }
 
       thisBooking.booked[date][hourBlock].push(table);
