@@ -40,7 +40,7 @@ class Booking {
     // console.log('getData params', params);
 
     const urls = {
-      booking: settings.db.url + '/' + settings.db.bookings + '?' + params.bookings.join('&'),
+      bookings: settings.db.url + '/' + settings.db.bookings + '?' + params.bookings.join('&'),
       eventsCurrent: settings.db.url + '/' + settings.db.events + '?' + params.eventsCurrent.join('&'),
       eventsRepeat: settings.db.url + '/' + settings.db.events + '?' + params.eventsRepeat.join('&'),
     };
