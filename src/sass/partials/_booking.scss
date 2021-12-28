@@ -171,8 +171,16 @@
         background: $color-dark;
         opacity: 0.4;
       }
-  
     }
+
+    &.selected {
+      background: steelblue;
+      border: rebeccapurple;
+    }
+
+
+
+
   }
   
   [data-table="1"] {
