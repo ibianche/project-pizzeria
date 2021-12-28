@@ -157,23 +157,7 @@ class Booking {
       }
 
     }
-
-
-
-
-
   }
-
-
-
-
-
-
-
-
-
-
-
 
 
   render(element) {
@@ -198,6 +182,8 @@ class Booking {
     thisBooking.dom.hourPicker = document.querySelector(select.widgets.hourPicker.wrapper);
 
     thisBooking.dom.tables = thisBooking.dom.wrapper.querySelectorAll(select.widgets.booking.tables);
+
+
 
   }
 
@@ -225,10 +211,34 @@ class Booking {
       thisBooking.updateDOM();
     });
 
+    thisBooking.dom.tables.addEventListener('click', function () {   /*reaguje na kliknięcie diva ze stolikami*/
+      thisBooking.initTables();
+    })
+  }
+
+
+  initTables(){
+    const thisBooking = this;
+
+    const chosenTable = document.querySelector(select.widgets.booking.tables);
+
+    thisBooking.dom.tables.addEventListener('click', function (event) {
+      event.preventDefault();
+
+      if(chosenTable !== )
+
+    });
+
+
+
 
 
 
   }
+
+
+
+
 
 
 }
