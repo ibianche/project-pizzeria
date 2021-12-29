@@ -229,7 +229,7 @@ class Booking {
       event.preventDefault();
 
       if(chosenTable.classList.contains(this.booked)){
-        alert('Solik jest zajęty!')
+        alert('Stolik jest zajęty!')
       }else{
         thisBooking.clickedTable = [];
       }
