@@ -186,6 +186,8 @@ class Booking {
 
     thisBooking.dom.tables = thisBooking.dom.wrapper.querySelectorAll(select.widgets.booking.tables);
 
+    thisBooking.dom.floorPlan = thisBooking.dom.wrapper.querySelector(select.widgets.booking.floorPlan);
+
 
 
   }
@@ -214,7 +216,7 @@ class Booking {
       thisBooking.updateDOM();
     });
 
-    thisBooking.dom.tables.addEventListener('click', function (event) {   /*reaguje na kliknięcie diva ze stolikami*/
+    thisBooking.dom.floorPlan.addEventListener('click', function (event) {   /*reaguje na kliknięcie diva ze stolikami*/
       thisBooking.initTables(event);
     });
   }
@@ -238,6 +240,7 @@ class Booking {
       thisBooking.clickedTable = tableId;
       clickedElement.classList.add('selected');
     }
+
 
   }
 
