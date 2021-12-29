@@ -214,34 +214,30 @@ class Booking {
       thisBooking.updateDOM();
     });
 
-    thisBooking.dom.tables.addEventListener('click', function () {   /*reaguje na kliknięcie diva ze stolikami*/
-      thisBooking.initTables();
-    })
+    thisBooking.dom.tables.addEventListener('click', function (event) {   /*reaguje na kliknięcie diva ze stolikami*/
+      thisBooking.initTables(event);
+    });
   }
 
 
-  initTables(){
+  initTables(event){
     const thisBooking = this;
 
-    const chosenTable = document.querySelector(select.widgets.booking.tables);
+    const clickedElement = event.target;
+    const tableId = clickedElement.getAttribute('data-table');
 
-    thisBooking.dom.tables.addEventListener('click', function (event) {
-      event.preventDefault();
+    const table = document.querySelector(classNames.booking.table);
+    const tableBooked = document.querySelector(classNames.booking.tableBooked);
+    const tableSelected = document.querySelector(classNames.booking.tableSelected);
 
-      if(chosenTable.classList.contains(this.booked)){
-        alert('Stolik jest zajęty!')
-      }else{
-        thisBooking.clickedTable = [];
-      }
-
-    });
-
-
-
-
-
-
-
+    if(clickedElement === table && clickedElement === tableBooked){
+      alert('Stolik jest zajęty!')
+    }else if (tableSelected.classList.contains('selected')){
+      clickedElement.classList.remove('selected');
+    }else{
+      thisBooking.clickedTable = tableId;
+      clickedElement.classList.add('selected');
+    }
 
   }
 
