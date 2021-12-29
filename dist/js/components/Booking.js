@@ -8,6 +8,9 @@ class Booking {
   constructor(element) {
     const thisBooking = this;
 
+    thisBooking.clickedTable = [];
+
+
     thisBooking.render(element);
     thisBooking.initWidgets();
     thisBooking.getData();
@@ -225,9 +228,15 @@ class Booking {
     thisBooking.dom.tables.addEventListener('click', function (event) {
       event.preventDefault();
 
-      if(chosenTable !== )
+      if(chosenTable.classList.contains(this.booked)){
+        alert('Solik jest zajęty!')
+      }else{
+        thisBooking.clickedTable = [];
+      }
 
     });
+
+
 
 
 
