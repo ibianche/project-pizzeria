@@ -228,22 +228,22 @@ class Booking {
     const clickedElement = event.target;
     const tableId = clickedElement.getAttribute('data-table');
 
-    const table = document.querySelector(classNames.booking.table);
-    const tableBooked = document.querySelector(classNames.booking.tableBooked);
-    const tableSelected = document.querySelector(classNames.booking.tableSelected);
+    const table = clickedElement.classList.contains(classNames.booking.table); /*contains sprawdza czy element ma ()klase*/
+    const tableBooked = clickedElement.classList.contains(classNames.booking.tableBooked);
+    const tableSelected = clickedElement.classList.contains(classNames.booking.tableSelected);
+
 
     if(clickedElement === table && clickedElement === tableBooked){
       alert('Stolik jest zajęty!')
-    }else if (tableSelected.classList.contains('selected')){
-      clickedElement.classList.remove('selected');
+    }else if(tableSelected.includes('selected')){
+      clickedElement.classList.remove('selected')
     }else{
       thisBooking.clickedTable = tableId;
       clickedElement.classList.add('selected');
+      // thisBooking.clickedTable.push(tableId);
     }
 
-
   }
-
 
 
 
