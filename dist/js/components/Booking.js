@@ -222,7 +222,7 @@ class Booking {
   }
 
 
-  initTables(event){
+  initTables(event) {
     const thisBooking = this;
 
     const clickedElement = event.target;
@@ -233,15 +233,27 @@ class Booking {
     const tableSelected = clickedElement.classList.contains(classNames.booking.tableSelected);
 
 
-    if(clickedElement === table && clickedElement === tableBooked){
-      alert('Stolik jest zajęty!')
-    }else if(tableSelected.includes('selected')){
-      clickedElement.classList.remove('selected')
-    }else{
-      thisBooking.clickedTable = tableId;
-      clickedElement.classList.add('selected');
-      // thisBooking.clickedTable.push(tableId);
+    if (table && tableBooked === false) { /*sprawdzam czy to jest stolik i czy nie jest zabookowany*/
+      for (let table of thisBooking.dom.tables) {  /*sprawdzam czy inne stoliki ma klase selected*/
+        table.classList.remove('selected'); /*jezeli ma to usuwam*/
+      }
+      clickedElement.classList.add('selected'); /*dodaje klase selected jezeli warunek jest prawdziwy*/
+      thisBooking.clickedTable = tableId; /*przypisuję numerek(tableId) do klikniętego elementu*/
+    } else {
+      alert('Stolik niedostępny!'); /*jezeli warunek nie jest prawdziwy, bedzie komunikat ze stolik jest zajety*/
     }
+
+
+
+    // if(clickedElement === table && clickedElement === tableBooked){
+    //   alert('Stolik jest zajęty!')
+    // }else if(tableSelected.includes('selected')){
+    //   clickedElement.classList.remove('selected')
+    // }else{
+    //   thisBooking.clickedTable = tableId;
+    //   clickedElement.classList.add('selected');
+    //   // thisBooking.clickedTable.push(tableId);
+    // }
 
   }
 
