@@ -202,20 +202,24 @@ class Booking {
     const thisBooking = this;
     //tworzę nową instancje AmountWidget
     thisBooking.peopleAmount = new AmountWidget(thisBooking.dom.peopleAmount);
-    thisBooking.dom.peopleAmount.addEventListener('click', function () {
+    thisBooking.dom.peopleAmount.addEventListener('updated', function () {
+      thisBooking.removeTableSelection();
     });
 
     //tworzę nową instancje AmountWidget
     thisBooking.hoursAmount = new AmountWidget(thisBooking.dom.hoursAmount);
-    thisBooking.dom.hoursAmount.addEventListener('click', function () {
+    thisBooking.dom.hoursAmount.addEventListener('updated', function () {
+      thisBooking.removeTableSelection();
     });
 
     thisBooking.datePicker = new DatePicker(thisBooking.dom.datePicker);
-    thisBooking.dom.datePicker.addEventListener('click', function () {
+    thisBooking.dom.datePicker.addEventListener('updated', function () {
+      thisBooking.removeTableSelection();
     });
 
     thisBooking.hourPicker = new HourPicker(thisBooking.dom.hourPicker);
-    thisBooking.dom.hourPicker.addEventListener('click', function () {
+    thisBooking.dom.hourPicker.addEventListener('updated', function () {
+      thisBooking.removeTableSelection();
     });
 
     thisBooking.dom.wrapper.addEventListener('updated', function () {
@@ -225,7 +229,25 @@ class Booking {
     thisBooking.dom.floorPlan.addEventListener('click', function (event) {   /*reaguje na kliknięcie diva ze stolikami*/
       thisBooking.initTables(event);
     });
+
+    thisBooking.dom.bookingForm.addEventListener('submit', function (event) {
+      event.preventDefault();
+      thisBooking.sendBooking();
+    })
+
+
   }
+
+  removeTableSelection(){ /*po zmianie widgetow(godzina,data,ilosc...) zeruje stolik*/
+    const thisBooking = this;
+
+    for (let table of thisBooking.dom.tables) {  /*sprawdzam czy inne stoliki ma klase selected*/
+      table.classList.remove('selected'); /*jezeli ma to usuwam*/
+    }
+    thisBooking.clickedTable = null;
+
+  }
+
 
 
   initTables(event) {
@@ -236,28 +258,15 @@ class Booking {
 
     const table = clickedElement.classList.contains(classNames.booking.table); /*contains sprawdza czy element ma ()klase*/
     const tableBooked = clickedElement.classList.contains(classNames.booking.tableBooked);
-    const tableSelected = clickedElement.classList.contains(classNames.booking.tableSelected);
-
+    // const tableSelected = clickedElement.classList.contains(classNames.booking.tableSelected);
 
     if (table && tableBooked === false) { /*sprawdzam czy to jest stolik i czy nie jest zabookowany*/
-      for (let table of thisBooking.dom.tables) {  /*sprawdzam czy inne stoliki ma klase selected*/
-        table.classList.remove('selected'); /*jezeli ma to usuwam*/
-      }
+      thisBooking.removeTableSelection();
       clickedElement.classList.add('selected'); /*dodaje klase selected jezeli warunek jest prawdziwy*/
       thisBooking.clickedTable = tableId; /*przypisuję numerek(tableId) do klikniętego elementu*/
     } else {
       alert('Stolik niedostępny!'); /*jezeli warunek nie jest prawdziwy, bedzie komunikat ze stolik jest zajety*/
     }
-
-    // if(clickedElement === table && clickedElement === tableBooked){
-    //   alert('Stolik jest zajęty!')
-    // }else if(tableSelected.includes('selected')){
-    //   clickedElement.classList.remove('selected')
-    // }else{
-    //   thisBooking.clickedTable = tableId;
-    //   clickedElement.classList.add('selected');
-    //   // thisBooking.clickedTable.push(tableId);
-    // }
 
   }
 
@@ -270,7 +279,7 @@ class Booking {
     const payload = {
       date: thisBooking.datePicker.value,
       hour: thisBooking.hourPicker.value,
-      table: thisBooking.clickedTable.value,
+      table: thisBooking.clickedTable,
       duration: thisBooking.hoursAmount.value,
       ppl: thisBooking.peopleAmount.value,
       starters: [],
