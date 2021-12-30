@@ -3,6 +3,7 @@ import {select, settings, templates, classNames} from '../settings.js';
 import AmountWidget from './AmountWidget.js';
 import DatePicker from './DatePicker.js';
 import HourPicker from './HourPicker.js';
+import {duration} from "flatpickr/dist/utils/dates";
 
 class Booking {
   constructor(element) {
@@ -188,6 +189,11 @@ class Booking {
 
     thisBooking.dom.floorPlan = thisBooking.dom.wrapper.querySelector(select.widgets.booking.floorPlan);
 
+    thisBooking.dom.bookingForm = thisBooking.dom.wrapper.querySelector(select.widgets.booking.bookingForm);
+    thisBooking.dom.bookingAddress = thisBooking.dom.wrapper.queryParams(select.widgets.booking.bookingAddress);
+    thisBooking.dom.bookingPhone = thisBooking.dom.wrapper.querySelector(select.widgets.booking.bookingPhone);
+    thisBooking.dom.starters = thisBooking.dom.wrapper.querySelectorAll(select.widgets.booking.starters);
+
 
 
   }
@@ -243,8 +249,6 @@ class Booking {
       alert('Stolik niedostępny!'); /*jezeli warunek nie jest prawdziwy, bedzie komunikat ze stolik jest zajety*/
     }
 
-
-
     // if(clickedElement === table && clickedElement === tableBooked){
     //   alert('Stolik jest zajęty!')
     // }else if(tableSelected.includes('selected')){
@@ -254,6 +258,47 @@ class Booking {
     //   clickedElement.classList.add('selected');
     //   // thisBooking.clickedTable.push(tableId);
     // }
+
+  }
+
+
+  sendBooking() {
+    const thisBooking = this;
+
+    const url = settings.db.url + '/' + settings.db.orders;
+
+    const payload = {
+      date: thisBooking.datePicker,
+      hour: thisBooking.hourPicker,
+      table: thisBooking.clickedTable,
+      duration: thisBooking.hoursAmount,
+      ppl: thisBooking.peopleAmount,
+      starters: [],
+      phone: thisBooking.dom.bookingPhone,
+      address: thisBooking.dom.bookingAddress,
+    };
+    for(let starter of thisBooking.dom.starters){
+      if(starter.checked){
+          starter.split('');
+      }
+    }
+
+
+    // for (let prod of thisCart.products) {
+    //   payload.products.push(prod.getData());
+    // }
+    // ;
+
+    const options = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(payload),
+    };
+
+    fetch(url, options);
+
 
   }
 

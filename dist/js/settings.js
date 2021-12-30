@@ -45,6 +45,11 @@ export const select = {
       hoursAmount: '.hours-amount',
       tables: '.floor-plan .table',
       floorPlan: '.floor-plan',
+      bookingForm: '.booking-form',
+      bookingAddress: '.booking-form [name="address"]',
+      bookingPhone: '.booking-from [name="phone"]',
+      starters: '.water .bread',
+      // bread: '.bread',
     },
     nav: {
       links: '.main-nav a',
