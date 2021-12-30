@@ -46,9 +46,10 @@ export const select = {
       tables: '.floor-plan .table',
       floorPlan: '.floor-plan',
       bookingForm: '.booking-form',
-      bookingAddress: '[name="address"]',
-      bookingPhone: '[name="phone"]',
-      starters: '.water .bread',
+      bookingAddress: '.booking-form [name="address"]',
+      bookingPhone: '.booking-form [name="phone"]',
+      // starters: '.water .bread',
+      starters: '.booking-form [name="starter"]',
 
     },
     nav: {

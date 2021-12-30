@@ -154,7 +154,7 @@ class Booking {
       if(
         !allAvailable
         &&
-        thisBooking.booked[thisBooking.date][thisBooking.hour].includes(tableId) > -1
+        thisBooking.booked[thisBooking.date][thisBooking.hour].includes(tableId)
       ){
         table.classList.add(classNames.booking.tableBooked);
       }else{
@@ -255,7 +255,7 @@ class Booking {
     const thisBooking = this;
 
     const clickedElement = event.target;
-    const tableId = clickedElement.getAttribute('data-table');
+    const tableId = parseInt(clickedElement.getAttribute('data-table'));
 
     const table = clickedElement.classList.contains(classNames.booking.table); /*contains sprawdza czy element ma ()klase*/
     const tableBooked = clickedElement.classList.contains(classNames.booking.tableBooked);
@@ -294,6 +294,7 @@ class Booking {
     }
 
     thisBooking.makeBooked(payload.date, payload.hour, payload.duration, payload.table);
+    thisBooking.removeTableSelection();
 
     const options = {
       method: 'POST',
