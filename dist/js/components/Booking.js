@@ -3,7 +3,7 @@ import {select, settings, templates, classNames} from '../settings.js';
 import AmountWidget from './AmountWidget.js';
 import DatePicker from './DatePicker.js';
 import HourPicker from './HourPicker.js';
-import {duration} from "flatpickr/dist/utils/dates";
+// import {duration} from "./flatpickr/dist/utils/dates";
 
 class Booking {
   constructor(element) {
@@ -190,7 +190,7 @@ class Booking {
     thisBooking.dom.floorPlan = thisBooking.dom.wrapper.querySelector(select.widgets.booking.floorPlan);
 
     thisBooking.dom.bookingForm = thisBooking.dom.wrapper.querySelector(select.widgets.booking.bookingForm);
-    thisBooking.dom.bookingAddress = thisBooking.dom.wrapper.queryParams(select.widgets.booking.bookingAddress);
+    thisBooking.dom.bookingAddress = thisBooking.dom.wrapper.querySelector(select.widgets.booking.bookingAddress);
     thisBooking.dom.bookingPhone = thisBooking.dom.wrapper.querySelector(select.widgets.booking.bookingPhone);
     thisBooking.dom.starters = thisBooking.dom.wrapper.querySelectorAll(select.widgets.booking.starters);
 
@@ -268,26 +268,21 @@ class Booking {
     const url = settings.db.url + '/' + settings.db.orders;
 
     const payload = {
-      date: thisBooking.datePicker,
-      hour: thisBooking.hourPicker,
-      table: thisBooking.clickedTable,
-      duration: thisBooking.hoursAmount,
-      ppl: thisBooking.peopleAmount,
+      date: thisBooking.datePicker.value,
+      hour: thisBooking.hourPicker.value,
+      table: thisBooking.clickedTable.value,
+      duration: thisBooking.hoursAmount.value,
+      ppl: thisBooking.peopleAmount.value,
       starters: [],
-      phone: thisBooking.dom.bookingPhone,
-      address: thisBooking.dom.bookingAddress,
+      phone: thisBooking.dom.bookingPhone.value,
+      address: thisBooking.dom.bookingAddress.value,
     };
     for(let starter of thisBooking.dom.starters){
       if(starter.checked){
-          starter.split('');
+          payload.starters.push(starter.value);
       }
     }
 
-
-    // for (let prod of thisCart.products) {
-    //   payload.products.push(prod.getData());
-    // }
-    // ;
 
     const options = {
       method: 'POST',
