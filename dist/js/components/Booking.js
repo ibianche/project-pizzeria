@@ -265,7 +265,7 @@ class Booking {
   sendBooking() {
     const thisBooking = this;
 
-    const url = settings.db.url + '/' + settings.db.orders;
+    const url = settings.db.url + '/' + settings.db.bookings;
 
     const payload = {
       date: thisBooking.datePicker.value,
