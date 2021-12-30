@@ -46,10 +46,10 @@ export const select = {
       tables: '.floor-plan .table',
       floorPlan: '.floor-plan',
       bookingForm: '.booking-form',
-      bookingAddress: '.booking-form [name="address"]',
-      bookingPhone: '.booking-from [name="phone"]',
+      bookingAddress: '[name="address"]',
+      bookingPhone: '[name="phone"]',
       starters: '.water .bread',
-      // bread: '.bread',
+
     },
     nav: {
       links: '.main-nav a',
