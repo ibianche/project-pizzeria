@@ -123,6 +123,15 @@ const app = {
 
     },
 
+    initHome: function(){
+      const thisApp = this;
+
+      const widgetOfHome = document.querySelector(select.containerOf.home);
+
+      thisApp.Home = new Home(widgetOfHome);
+
+    },
+
 
     init: function () {
       const thisApp = this;
@@ -141,6 +150,8 @@ const app = {
       thisApp.initCart();
 
       thisApp.initBooking();
+
+      thisApp.initHome();
     },
 
   };
