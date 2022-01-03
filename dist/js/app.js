@@ -5,7 +5,7 @@ import Cart from './components/Cart.js';
 import CartProduct from './components/CartProduct.js';
 import AmountWidget from './components/AmountWidget.js';
 import Booking from './components/Booking.js';
-
+import Home from './components/Home.js';
 
 const app = {
     initPages: function(){
