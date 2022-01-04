@@ -24,6 +24,16 @@ class Home {
     //zmiana wartości wrappera innerHTML na kod wygenerowany z szablonu
     thisHome.dom.wrapper.innerHTML = generatedHTML;
 
+    var slider = tns({
+      container: '.my-slider',
+      slideBy: 'page',
+      mouseDrag: true,
+      controls: false,
+      autoplay: true,
+      autoplayButtonOutput: false,
+      nav: false,
+    });
+
   }
 
 }
