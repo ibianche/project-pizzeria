@@ -50,13 +50,23 @@
   margin-top: -10px;
 
 }
-//
-//.gallery-cell {
-//  width: 66%;
-//  height: 200px;
-//  margin-right: 10px;
-//  counter-increment: gallery-cell;
-//}
+.my-slider-image{
+  position: absolute;
+  max-width: 250px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.text-cell{
+  color: black;
+  padding-left: 270px;
+}
+.gallery-cell{
+  padding-top: 50px;
+
+}
+
 
 
 
