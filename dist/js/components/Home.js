@@ -1,4 +1,6 @@
 import {select, settings, templates, classNames} from '../settings.js';
+import { app } from '../app.js';
+
 
 
 class Home {
@@ -6,6 +8,7 @@ class Home {
     const thisHome = this;
 
     thisHome.render(element);
+    thisHome.activePage();
   }
 
 
@@ -24,7 +27,12 @@ class Home {
     //zmiana wartości wrappera innerHTML na kod wygenerowany z szablonu
     thisHome.dom.wrapper.innerHTML = generatedHTML;
 
-    var slider = tns({
+    thisHome.dom.orderOnline = document.querySelector(select.home.orderOnline);
+    thisHome.dom.bookTable = document.querySelector(select.home.bookTable);
+
+
+
+    const slider = tns({
       container: '.my-slider',
       slideBy: 'page',
       mouseDrag: true,
@@ -35,6 +43,20 @@ class Home {
     });
 
   }
+
+  activePage(){
+    const thisHome = this;
+
+    thisHome.dom.orderOnline.addEventListener('click', function () {
+      app.activatePage();
+    });
+
+    thisHome.dom.bookTable.addEventListener('click', function () {
+      app.activatePage();
+    })
+  }
+
+
 
 }
 

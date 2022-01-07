@@ -3,8 +3,7 @@ import {select, settings, templates, classNames} from '../settings.js';
 import AmountWidget from './AmountWidget.js';
 import DatePicker from './DatePicker.js';
 import HourPicker from './HourPicker.js';
-// import {duration} from "flatpickr/dist/utils/dates";
-// import {duration} from "./flatpickr/dist/utils/dates";
+
 
 class Booking {
   constructor(element) {
