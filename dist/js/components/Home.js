@@ -48,12 +48,12 @@ class Home {
     const thisHome = this;
 
     thisHome.dom.orderOnline.addEventListener('click', function () {
-      app.activatePage();
+      app.activatePage('order');
     });
 
     thisHome.dom.bookTable.addEventListener('click', function () {
-      app.activatePage();
-    })
+      app.activatePage('booking');
+    });
   }
 
 
