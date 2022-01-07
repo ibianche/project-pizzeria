@@ -10,7 +10,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="13">
@@ -31,7 +31,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/components/Booking.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1246">
+            <state relative-caret-position="832">
               <caret line="200" column="9" selection-start-line="200" selection-start-column="7" selection-end-line="200" selection-end-column="9" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
@@ -46,10 +46,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/settings.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1749">
+            <state relative-caret-position="2018">
               <caret line="138" column="10" selection-start-line="138" selection-start-column="10" selection-end-line="138" selection-end-column="10" />
             </state>
           </provider>
@@ -67,8 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/components/Home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+            <state relative-caret-position="474">
+              <caret line="55" column="7" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="7" />
               <folding>
                 <element signature="e#0#71#0" expanded="true" />
               </folding>
@@ -155,8 +155,8 @@
         <option value="$PROJECT_DIR$/src/sass/partials/_home.scss" />
         <option value="$PROJECT_DIR$/src/js/components/Booking.js" />
         <option value="$PROJECT_DIR$/src/js/settings.js" />
-        <option value="$PROJECT_DIR$/src/js/components/Home.js" />
         <option value="$PROJECT_DIR$/src/js/app.js" />
+        <option value="$PROJECT_DIR$/src/js/components/Home.js" />
       </list>
     </option>
   </component>
@@ -270,12 +270,12 @@
       <workItem from="1638982128408" duration="8019000" />
       <workItem from="1639231057338" duration="5728000" />
       <workItem from="1639580610455" duration="6382000" />
-      <workItem from="1639668237370" duration="79372000" />
+      <workItem from="1639668237370" duration="79883000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="229092000" />
+    <option name="totallyTimeSpent" value="229603000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -290,7 +290,7 @@
     <frame x="0" y="23" width="1440" height="808" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.31039324" visible="true" weight="0.28898427" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.31039324" visible="true" weight="0.28898427" />
       <window_info id="Structure" order="1" sideWeight="0.6896067" side_tool="true" weight="0.2746781" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -581,39 +581,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/settings.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1749">
-          <caret line="138" column="10" selection-start-line="138" selection-start-column="10" selection-end-line="138" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/components/Home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
-          <folding>
-            <element signature="e#0#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/components/Booking.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1246">
-          <caret line="200" column="9" selection-start-line="200" selection-start-column="7" selection-end-line="200" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-            <element signature="n#!!block;n#parseData#0;n#Booking#0" />
-            <element signature="n#!!block;n#makeBooked#0;n#Booking#0" />
-            <element signature="n#!!block;n#updateDOM#0;n#Booking#0" />
-            <element signature="n#!!block;n#render#0;n#Booking#0" />
-            <element signature="n#!!block;n#removeTableSelection#0;n#Booking#0" />
-            <element signature="n#!!block;n#sendBooking#0;n#Booking#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="13">
@@ -627,6 +594,39 @@
             <element signature="e#3530#3544#0" />
             <element signature="e#3527#3934#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/Booking.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="832">
+          <caret line="200" column="9" selection-start-line="200" selection-start-column="7" selection-end-line="200" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+            <element signature="n#!!block;n#parseData#0;n#Booking#0" />
+            <element signature="n#!!block;n#makeBooked#0;n#Booking#0" />
+            <element signature="n#!!block;n#updateDOM#0;n#Booking#0" />
+            <element signature="n#!!block;n#render#0;n#Booking#0" />
+            <element signature="n#!!block;n#removeTableSelection#0;n#Booking#0" />
+            <element signature="n#!!block;n#sendBooking#0;n#Booking#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="55" column="7" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/settings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2018">
+          <caret line="138" column="10" selection-start-line="138" selection-start-column="10" selection-end-line="138" selection-end-column="10" />
         </state>
       </provider>
     </entry>
